@@ -69,6 +69,6 @@ ax[0, 0].hist(pop, 20, density=True)
 
 ax[1, 0].set(xlabel="sample size", ylabel="average percentage difference",
              title="Expected vs actual variance")
-ax[1, 0].plot(aves[4:]) #Miss out the first 3 due to being very large percentages
+ax[1, 0].plot(aves[4:]) #Miss out the first 4 due to being very large percentages
 
 plt.show()
