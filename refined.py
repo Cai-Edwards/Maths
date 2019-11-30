@@ -65,7 +65,7 @@ for i in aves:
 
 
 ax[0, 0].set(title="Distribution")
-ax[0, 0].hist(pop, 20, density=True)
+ax[0, 0].hist(pop, 30, density=True)
 
 ax[1, 0].set(xlabel="sample size", ylabel="average percentage difference",
              title="Expected vs actual variance")
