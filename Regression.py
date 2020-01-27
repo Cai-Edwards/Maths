@@ -1,10 +1,10 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-n = 10
+n = 1000
 
-mean = [10, 10]
-cov = [[1, 0.8], [0.8, 1]]
+mean = [100, 100]
+cov = [[1, 1], [1, 1]]
 new = np.random.multivariate_normal(mean, cov, n)
 
 xlist, ylist = map(list, zip(*new))
@@ -19,7 +19,7 @@ syy = sum((y-ybar)**2 for y in ylist)
 b = sxy/sxx
 a = ybar-(b*xbar)
 
-linx = np.linspace(min(xlist), max(xlist), 150)
+linx = np.linspace(min(xlist), max(xlist), 2)
 liny = [x * b + a for x in linx]
 
 plt.scatter(xlist, ylist)
